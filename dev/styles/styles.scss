@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body {
+  background: #fdf6e3;
+  padding-top: 150px;
+}
+
+.green,
+.red,
+.yellow,
+.blue {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  cursor: pointer;
+}
+.green {
+  background: #00a74a;
+  border-radius: 100% 0 0 0;
+  top: 24px;
+  left: 24px;
+}
+.red {
+  background: #9f0f17;
+  border-radius: 0 100% 0 0;
+  top: 24px;
+  right: 24px;
+}
+.yellow {
+  background: #cca707;
+  border-radius: 0 0 0 100%;
+  bottom: 24px;
+  left: 24px;
+}
+.blue {
+  background: #094a8f;
+  border-radius: 0 0 100% 0;
+  bottom: 24px;
+  right: 24px;
+}
+.red.active {
+  background: #ff4c4c;
+}
+.green.active {
+  background: #13ff7c;
+}
+.yellow.active {
+  background-color: #fed93f;
+}
+.blue.active {
+  background-color: #1c8cff;
+}
+
+.simon-out {
+  background: #333333;
+  width: 492px;
+  height: 492px;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto 0 auto;
+}
+
+.center {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: #ece7ee;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  margin: -122px 0 0 -122px;
+  border: 12px solid #333;
+  overflow: hidden;
+}
+
+.center-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.cont-2 {
+  text-align: center;
+}
+.cont-1 {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  p {
+    margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+}
+.col-1,
+.col-2,
+.col-3 {
+  float: left;
+  margin-right: 8px;
+  p {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+}
+.count-show {
+  width: 50px;
+  background: #32050c;
+  border-radius: 10px;
+  border: 4px solid #222;
+  height: 32px;
+  font-size: 22px;
+  color: #dc0d29;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  margin-bottom: 5px;
+  line-height: 32px;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 4px solid #444;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.btn-red {
+  background: #fc0102;
+}
+.btn.btn-yellow {
+  background: yellow;
+  margin-top: 0;
+}
+.col-1 p {
+  text-align: center;
+}
+.strict-indicator {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 100%;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  &.active {
+    background: red;
+  }
+}
